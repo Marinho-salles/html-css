@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+
+       td, th{
+           border: 1px solid black;
+       }
+
+       td{
+           text-align: center;
+       }
+       caption{
+           font-size: 1.5em;
+           font-weight: bold;
+           padding: 10px;
+           background-color: lightgray;
+         
+           
+       }
+
+       thead, tfoot{
+           background-color: #383838;
+           color: white;
+       }
+
+       thead > tr > th{
+           position: sticky;
+           top: -1px;
+           background-color: #383838;;
+         
+       }
+
+       tbody > tr:nth-child(odd){
+           background-color: lightgray;
+       }
+
+       td.num{
+           text-align: right;
+       }
+
+      
+    </style>
+</head>
+  
+<body>
+   
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+            THEAD
+               tr,td, th
+            TBODY
+                tr,td, th
+            TFOOT
+                 tr,td, th
+    -->
+    <table>
+        <caption>População da República federativa</caption>
+        <thead>
+              <tr>
+                  <th scope="col">Estado</th>
+                  <th scope="col">População</th>
+                  <th scope="col" style="width: 50px">% da População</th>
+              </tr>
+        </thead>
+               
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <th class="num">46 649 132</th>
+                <th>21,9%</th>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <th>21 411 923</th>
+                <th>10,1%	</th>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <th>17 463 349</th>
+                <th>8,2%</th>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <th class="num">14 985 284</th>
+                <th>7,1%</th>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <th class="num">11 597 484</th>
+                <th>5,4%</th>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <th class="num">11 466 630</th>
+                <th>5,4%</th>
+            </tr>
+            <tr>
+                <th> Pernambuco</th>
+                <th class="num">9 674 793	</th>
+                <th>4,5%</th>
+            </tr>
+            <tr>
+                <th>Ceará</th>
+                <th class="num">9 240 580	</th>
+                <th>4,3%</th>
+            </tr>
+            <tr>
+                <th> Pará</th>
+                <th class="num">8 777 124</th>
+                <th>4,1%</th>
+            </tr>
+            <tr>
+                <th>Santa Catarina</th>
+                <th class="num">7 338 473</th>
+                <th>3,4%</th>
+            </tr>
+            <tr>
+                <th> Goiás</th>
+                <th class="num">7 206 589</th>
+                <th>3,4%</th>
+            </tr>
+            <tr>
+                <th> Maranhão</th>
+                <th class="num">7 153 262</th>
+                <th>3,4%</th>
+            </tr>
+            <tr>
+                <th>Amazonas</th>
+                <th class="num">4 269 995</th>
+                <th>2,0%</th>
+            </tr>
+            <tr>
+                <th> Espírito Santo</th>
+                <th class="num">4 108 508</th>
+                <th>1,9%</th>
+            </tr>
+            <tr>
+                <th> Paraíba</th>
+                <th class="num">4 059 905</th>
+                <th>1,9%</th>
+            </tr>
+            <tr>
+                <th> Mato Grosso</th>
+                <th class="num">3 567 234</th>
+                <th>1,7%</th>
+            </tr>
+            <tr>
+                <th> Rio Grande do Norte</th>
+                <th class="num">3 560 903</th>
+                <th>1,7%</th>
+            </tr>
+            <tr>
+                <th> Alagoas</th>
+                <th class="num">3 365 351</th>
+                <th>1,6%</th>
+            </tr>
+            <tr>
+                <th>Piauí</th>
+                <th class="num">3 289 290</th>
+                <th>1,6%</th>
+            </tr>
+            <tr>
+                <th> Distrito Federal</th>
+                <th class="num">3 094 325</th>
+                <th>1,4%</th>
+            </tr>
+            <tr>
+                <th> Mato Grosso do Sul</th>
+                <th class="num">2 839 188</th>
+                <th>1,3%</th>
+            </tr>
+            <tr>
+                <th> Sergipe</th>
+                <th class="num">2 338 474</th>
+                <th>1,1%</th>
+            </tr>
+            <tr>
+                <th> Rondônia</th>
+                <th class="num">1 815 278</th>
+                <th>0,8%</th>
+            </tr>
+            <tr>
+                <th>Tocantins</th>
+                <th class="num">1 607 363</th>
+                <th>0,7%</th>
+            </tr>
+            <tr>
+                <th> Acre</th>
+                <th class="num">906 876</th>
+                <th>0,4%</th>
+            </tr>
+            <tr>
+                <th>Amapá</th>
+                <th class="num">877 613	</th>
+                <th>0,4%</th>
+            </tr>
+            <tr>
+                <th> Roraima</th>
+                <th class="num">652 713</th>
+                <th>0,3%</th>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td scope="row"><strong> 213.317.639</strong></td>
+                <td scop="row">100%</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
